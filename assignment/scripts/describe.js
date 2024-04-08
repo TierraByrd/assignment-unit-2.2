@@ -26,11 +26,11 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
-
+// We create a variable called 'name' and assign it the value of 'Dane'.
+// Then, we make a conditional statement: 
+// If name is Mary, we console log "Hi, Mary!"
+// Otherwise, "How do you do?" will be console log. 
+// Since name = Dane, it will log out 'How do you do?
 //CODE
 /*
 let name = 'Dane';
@@ -45,11 +45,13 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
+// We create two variables: 'secret' and 'code'. We set 'code' to equal the vaule of 123;  
+// We then make a conditional statement for the variable 'code' :
+// if code is equal to 123; set 'secret' to be 'super' , and 'code' to be ('code' * 2); 
+// if code is greater than 250; set 'secret' to be 'duper'.
+// We check to see if 'code' equal 123, and it does. We multiply 123 by 2, 246 < 250
+// We console log  the value of 'secret' and it will log out  'super'.
 // 
-// 
-// 
-//
-
 //CODE
 /*
 let secret;
@@ -70,11 +72,14 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
-
+// We create variables: 'isStudent' set the value to true; 'age' set value to equal 34; 'zip' set value to equal '55407';
+// We then make a compound conditional statement:
+// If 'isStudent' is true, and  'zip' is greater than 80000, console log, 'You're a student on the West Coast!' ;
+// If 'isStudent' is false, or age is less than 30, console log, 'What are your hobbies?';
+// If 'isStudent' is ture, console log 'Welcome to Prime!';
+// otherwise, console log "How about the weather?"
+// when we evaluate the given variables, and values, we see that the 'isStudent' is true, but the zip is not greater than 80000.
+// therefore, we skip the first two conditions. We console log "Welcome to prime!"
 //CODE
 /*
 let isStudent = true;
@@ -130,10 +135,21 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+
+// FIX - colorOne -- red, but the instructions ask to set to 'blue';
+// should be: let colorOne = 'blue';
 let colorOne = 'red';
+
+// FIX - colorTwo -- blue, instructions ask to set to 'red';
+// Should be: let colorTwo = 'red';
 let colorTwo = 'blue';
+
 let mix = true;
 
+// Fix -- results -- instructions ask to set colorOne and colorTwo to 'purple' if mix equal true;
+// Should be: if mix:
+                 let colorOne = 'purple';
+                 let colorTwo = 'purple';
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -145,8 +161,13 @@ if (mix === true) {
 
 /*
 let temp = 40;
+
+// FIX --variable-- const, but instructions ask for variable, not a constant variable. Logging const time, will make time a variable that can not be changed.
+// should be: let time = 4;
 const time = 4;
 
+// FIX -- conditional statement --instructions wants to check if temp is higher than 39 AND if time is greater or equal to 4
+// should be: if (temp > 39 && time >= 4);
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -158,10 +179,22 @@ if (temp > 39 || time >= 4) {
 
 /*
 let age = 21;
+
+// FIX -- variable -- const, insturctions ask to create two variables, not a constant variable
+// Should be: let minAge = 21;
 const minAge = 21;
 
 if(minAge <= age) {
+
+  // FIX -- console.log('no entry'); insturctions want to log 'enter' if age is greater or equal to minAge.
+  // should be:  console.log('enter')
   console.log('no entry');
+
+  // FIX --console.log('enter'), This is the value displayed if the conditional statment is true. There wasn't any additional information regarding and 'else' statement. 
+  // However, an else statement can be made such as: 
+                                                    else {
+                                                      console.log('do not enter'); to give a different result if the statement doesn't meet the conditions.
+                                                    }
 } else {
   console.log('enter');
 }
